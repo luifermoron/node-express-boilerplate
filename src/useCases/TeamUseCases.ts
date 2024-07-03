@@ -24,7 +24,7 @@ export default class TeamUseCases extends AbstractUseCases<
       const teams = await this.getAll();
       return {
         teams: teams,
-        sample: 'This is an example of route versioning. Custom logic comes here :D'
+        sample: 'This is an example of route versioning. Custom stuff comes here :D'
       }
     }
 }
