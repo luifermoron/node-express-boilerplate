@@ -203,6 +203,11 @@ dist
 # comment the following lines
 !.yarn/cache
 
+# dotenv environment variables file
+.env
+.env.test
+.env*.local
+
 # and uncomment the following lines
 # .pnp.*
 

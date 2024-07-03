@@ -1,10 +1,9 @@
 
 import { CorsOptions, CorsOptionsDelegate } from 'cors';
 
-const NODE_ENV = process.env.NODE_ENV || 'development';
+const NODE_ENV = process.env.NODE_ENV;
 
 function originChecker(origin: string | undefined, callback: (err: Error | null, allow?: boolean) => void): void {
-  
   if (NODE_ENV === 'development') {
     callback(null, true);  // Allow all origins in development
   } else {

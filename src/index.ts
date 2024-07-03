@@ -1,3 +1,9 @@
+import path from 'path';
+import  dotenv from 'dotenv';
+
+// Load environment variables from .env file
+dotenv.config({ path: path.join(__dirname, '..', '.env') });
+
 import express, { Request, Response, NextFunction } from 'express';
 import helmet from 'helmet';
 const app = express();

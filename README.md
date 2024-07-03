@@ -12,6 +12,13 @@ This repository contains best development practices for an API-based project bui
 
 Let's explore the APIs in more detail:
 
+First create an .env file with the values:
+
+```sh
+NODE_ENV=development (or production)
+ALLOWED_ORIGINS=https://your-production-domain.com/
+```
+
 Simply start the server with:
 
 ```sh
@@ -19,6 +26,7 @@ yarn install
 
 yarn start
 ```
+
 Since the time I created this was during Copa America/Eurocopa, I decided to make this API an API for getting all teams, teams by regions, and regions themselves :)
 
 ## API Usage
